@@ -12,6 +12,8 @@
 
 - https://leetcode.com/problems/best-time-to-buy-and-sell-stock
 
+- https://leetcode.com/problems/linked-list-cycle/
+
 ## medium
 
 - [x] https://leetcode.com/problems/binary-tree-postorder-traversal/
@@ -44,6 +46,7 @@
 
 - https://leetcode.com/problems/subsets
 
+- https://leetcode.com/problems/linked-list-cycle-ii/
 
 ## hard
 
