@@ -30,13 +30,13 @@
 
 - [x] https://leetcode.com/problems/design-add-and-search-words-data-structure/
 
-- https://leetcode.com/problems/longest-common-subsequence/
+- [x] https://leetcode.com/problems/longest-common-subsequence/
 
 - https://leetcode.com/problems/coin-change/
 
 - https://leetcode.com/problems/longest-palindromic-substring/
 
-- https://leetcode.com/problems/longest-increasing-subsequence
+- [x] https://leetcode.com/problems/longest-increasing-subsequence
 
 - https://leetcode.com/problems/combinations/
 
