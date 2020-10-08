@@ -32,7 +32,7 @@
 
 - [x] https://leetcode.com/problems/longest-common-subsequence/
 
-- https://leetcode.com/problems/coin-change/
+- [x] https://leetcode.com/problems/coin-change/
 
 - https://leetcode.com/problems/longest-palindromic-substring/
 
