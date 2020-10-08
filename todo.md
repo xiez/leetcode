@@ -48,6 +48,8 @@
 
 - https://leetcode.com/problems/linked-list-cycle-ii/
 
+- https://leetcode.com/problems/maximum-length-of-repeated-subarray/
+
 ## hard
 
 - [x] https://leetcode.com/problems/recover-binary-search-tree/
