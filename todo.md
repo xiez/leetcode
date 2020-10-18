@@ -34,7 +34,7 @@
 
 - [x] https://leetcode.com/problems/coin-change/
 
-- https://leetcode.com/problems/longest-palindromic-substring/
+- [x] https://leetcode.com/problems/longest-palindromic-substring/
 
 - [x] https://leetcode.com/problems/longest-increasing-subsequence
 
@@ -49,6 +49,10 @@
 - https://leetcode.com/problems/linked-list-cycle-ii/
 
 - https://leetcode.com/problems/maximum-length-of-repeated-subarray/
+
+- [x] https://leetcode.com/problems/coin-change-2/
+
+- [x] https://leetcode.com/problems/combination-sum-iv/
 
 ## hard
 
