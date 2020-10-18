@@ -14,6 +14,8 @@
 
 - https://leetcode.com/problems/linked-list-cycle/
 
+- https://leetcode.com/problems/climbing-stairs/
+
 ## medium
 
 - [x] https://leetcode.com/problems/binary-tree-postorder-traversal/
