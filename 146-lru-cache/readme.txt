@@ -39,3 +39,28 @@ Constraints:
     0 <= value <= 104
     At most 3 * 104 calls will be made to get and put.
 
+----------------------------------------
+
+Use queue which implemented using double linked list to store values.
+Most recently used val will be near the front end.
+Use dict to implement O(1) operations.
+
+## Pseudo code:
+
+init(n):
+
+queue = Queue()
+keys = dict()
+
+put(a):
+
+if queue.is_full():
+  remove tail node
+  delete key from keys
+
+node = queue.add(a)
+keys[a] = node
+
+get(a):
+
+keys[a].val if a in keys else -1
