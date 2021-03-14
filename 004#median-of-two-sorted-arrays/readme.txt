@@ -49,3 +49,50 @@ Follow up: The overall run time complexity should be O(log (m+n)).
 
 Time: O(max{m,n})
 Space: O(max{m,n})
+
+# Binary search
+
+idea from https://medium.com/@hazemu/finding-the-median-of-2-sorted-arrays-in-logarithmic-time-1d3f2ecbeb46
+
+Two arrays (A, B), A is the larger one
+
+the final array that last element (or two) is the median, the length (N) of final array is (m+n) / 2 + 1
+
+the final array contains at least one element from A, and at most all elements from A
+
+## meet the median condition
+
+array A: ... x x'
+array B: ... y y'
+
+if x >= y and x <= y' or y >= x and y <= x', then we can get the median of two arrays
+
+## pseudo code:
+
+for i=1 to N:
+    A contributes i element(s), B contributes (N-i) elements
+    if this meet the median condition, then we can get the median
+
+we can improve the iteration using binary search to find the i,
+
+low = 0
+high = N
+mid = (low + high) / 2
+
+while True:
+      A contributes mid element(s), B contributes (N-mid) elements
+      if this meet the median condition, the we can get the median
+      else:
+        we should expand/shrink the range depends on median condition
+
+        expand: low = mid+1
+        shrink: high = mid-1
+        calculate new mid element(s)
+
+
+
+
+
+
+
+
