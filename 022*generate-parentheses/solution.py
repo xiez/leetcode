@@ -1,19 +1,29 @@
-class Solution:
-    def __init__(self):
-        self.res = []
+import copy
 
-    def genParen(self, lst, pos, n, o, c):
-        if c == n:
-            self.res.append("".join(lst))
-        else:
-            if o > c:
-                lst[pos] = ')'
-                self.genParen(lst, pos + 1, n, o, c + 1)
-            if o < n:
-                lst[pos] = '('
-                self.genParen(lst, pos + 1, n, o + 1, c)
+class Solution:
+    def __init__(self, ):
+        self.ret = ['()']
+        
+    def generate(self, s):
+        ret = []        
+        i = 0
+        while i <= len(s):
+            ret.append(s[:i] + '()' + s[i:])
+            i += 1
+
+        return list(set(ret))
     
-    def generateParenthesis(self, n: int):
-        lst = [""] * 2 * n
-        self.genParen(lst, 0, n, 0, 0)
-        return self.res
+    def generateParenthesis(self, n: int) -> List[str]:
+        i = 1
+        while i < n:
+            lst = []
+            tmp = copy.copy(self.ret)
+            for e in tmp:
+                ret = self.generate(e)
+                for r in ret:
+                    if r not in lst:
+                        lst.append(r)
+            self.ret = lst
+            i += 1
+            
+        return self.ret
